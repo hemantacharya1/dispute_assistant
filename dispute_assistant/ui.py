@@ -102,3 +102,39 @@ def display_results(classified_df, resolutions_df):
     st.subheader("Dispute Trends")
     category_counts = edited_df['predicted_category'].value_counts()
     st.bar_chart(category_counts)
+
+
+def build_chat_interface():
+    """
+    Creates the chat UI for interacting with the AI agent.
+
+    Manages chat history and user input.
+    """
+    st.subheader("🤖 Chat with the AI Assistant")
+    st.markdown("""
+    Ask questions about your processed data in natural language.
+    The assistant is aware of the conversation history.
+    """)
+
+    # Initialize chat history in session state if it doesn't exist
+    if "messages" not in st.session_state:
+        st.session_state.messages = [
+            {"role": "assistant", "content": "How can I help you with the dispute data?"}
+        ]
+
+    # Display prior chat messages
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+
+    # Get user input
+    if prompt := st.chat_input("Ask a question about your data..."):
+        # Add user message to history and display it
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
+        
+        # The main app.py will handle getting the response and displaying it
+        return prompt # Return the user's prompt to the main script
+    
+    return None

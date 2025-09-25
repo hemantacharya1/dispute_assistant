@@ -13,3 +13,5 @@ secrets.toml
 # IDE files
 .idea/
 .vscode/
+
+.streamlit/
