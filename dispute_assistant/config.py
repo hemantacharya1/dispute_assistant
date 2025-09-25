@@ -27,10 +27,6 @@ KEYWORD_MAP = {
         "someone else used my card",
         "hacked",
     ],
-    "DUPLICATE_CHARGE": [
-        "twice", "double charge", "duplicate", "charged again", "two times",
-        "billed me twice", "two debit messages"
-    ],
     "REFUND_PENDING": [
         "refund", "waiting for money back", "reversed", "pending refund",
         "refund not received", "amount not reversed"

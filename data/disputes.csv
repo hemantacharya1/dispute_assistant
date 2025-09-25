@@ -19,3 +19,4 @@ D017,C017,T017,"Refund for canceled order not received",UPI,Mobile,875,2025-08-0
 D018,C018,T018,"Duplicate UPI transfer to same VPA, minutes apart",UPI,Mobile,1299,2025-08-03 11:15:00
 D019,C019,T019,"NEFT failed but amount not reversed yet",NEFT,Web,25000,2025-08-03 11:55:27
 D020,C020,T020,"Card charged twice at petrol pump",CARD,POS,1800,2025-08-03 12:20:49
+D021,C021,T021,"I was charged for a subscription I never signed up for",CARD,Web,499,2025-08-03 13:15:30
