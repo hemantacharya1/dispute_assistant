@@ -63,7 +63,7 @@ def get_agent_executor(df: pd.DataFrame):
         model="gemini-2.5-flash",
         google_api_key=google_api_key,
         temperature=0, # Keep it deterministic for data tasks
-        convert_system_message_to_human=True
+        convert_system_message_to_human=True,
     )
 
     # Create the pandas DataFrame agent with our custom prefix

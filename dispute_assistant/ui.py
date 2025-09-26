@@ -14,33 +14,44 @@ import pandas as pd
 
 def build_sidebar():
     """
-    Creates the sidebar UI for file uploading and processing.
+    Creates the sidebar UI for both uploading custom files and loading sample data.
 
     Returns:
-        tuple: A tuple containing (disputes_file, transactions_file, process_button_clicked).
-               The files are file-like objects from Streamlit's uploader.
-               The button status is a boolean.
+        A tuple containing:
+        - disputes_file (UploadedFile or None)
+        - transactions_file (UploadedFile or None)
+        - process_upload_clicked (bool)
+        - process_sample_clicked (bool)
     """
-    st.sidebar.header("Data Input")
-    st.sidebar.markdown("""
-    Upload your raw `disputes.csv` and `transactions.csv` files below.
-    The system will process them and provide classifications and resolution suggestions.
-    """)
-
+    st.sidebar.header("Data Input Options")
+    
+    # --- Option 1: Upload Custom Files ---
+    st.sidebar.subheader("1. Upload Your Own Data")
     disputes_file = st.sidebar.file_uploader("Upload Disputes CSV", type=["csv"])
     transactions_file = st.sidebar.file_uploader("Upload Transactions CSV", type=["csv"])
 
-    process_button_clicked = st.sidebar.button(
-        "Analyze Disputes",
+    process_upload_clicked = st.sidebar.button(
+        "Analyze Uploaded Files", # MODIFIED: More specific label
         type="primary",
         use_container_width=True,
         disabled=(not disputes_file or not transactions_file)
+    )
+
+    st.sidebar.markdown("---")
+
+    # --- Option 2: Use Sample Data ---
+    st.sidebar.subheader("2. Use Sample Data")
+    st.sidebar.markdown("Click below to analyze the sample `disputes.csv` and `transactions.csv` included with the app.")
+    
+    process_sample_clicked = st.sidebar.button(
+        "Load Sample Data", # NEW: The new button
+        use_container_width=True
     )
     
     st.sidebar.markdown("---")
     st.sidebar.info("This application is a demo for an AI-powered dispute resolution assistant.")
 
-    return disputes_file, transactions_file, process_button_clicked
+    return disputes_file, transactions_file, process_upload_clicked, process_sample_clicked
 
 
 def display_results(classified_df, resolutions_df):
