@@ -4,6 +4,8 @@ This project is a comprehensive, AI-powered web application built with Streamlit
 
 The application leverages a hybrid AI model for dispute classification and a powerful, history-aware conversational agent (powered by Google's Gemini and LangChain) to provide a seamless user experience for support agents.
 
+![Dashboard](assets/img1.png)
+![ChatInterface](assets/img2.png)
 
 ## ✨ Features
 
