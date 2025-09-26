@@ -1,0 +1,21 @@
+dispute_id,predicted_category,confidence,explanation,date & time
+D001,DUPLICATE_CHARGE,0.95,Data analysis found a transaction with the same amount and customer within 3 minutes.,2025-08-01 10:23:11
+D002,FAILED_TRANSACTION,0.95,"Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.54. Txn status=FAILED",2025-08-01 11:55:09
+D003,FAILED_TRANSACTION,0.95,"Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.78. Txn status=FAILED",2025-08-01 12:10:43
+D004,FRAUD,0.91,"Description matched FRAUD keywords. phrase='fraud', fuzzy=100, embed=0.79",2025-08-01 13:30:01
+D005,REFUND_PENDING,0.9,"Description matched REFUND_PENDING. phrase='refund', fuzzy=100, embed=0.72",2025-08-01 14:02:18
+D006,DUPLICATE_CHARGE,0.95,Data analysis found a transaction with the same amount and customer within 3 minutes.,2025-08-01 15:11:05
+D007,FAILED_TRANSACTION,0.95,"Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.56. Txn status=FAILED",2025-08-01 16:45:30
+D008,OTHERS,0.5,No strong rule or semantic/fuzzy match. Requires manual investigation.,2025-08-01 17:20:12
+D009,FRAUD,0.88,"Description matched FRAUD keywords. phrase='chargeback', fuzzy=100, embed=0.62",2025-08-02 09:12:44
+D010,REFUND_PENDING,0.88,"Description matched REFUND_PENDING. phrase='refund', fuzzy=100, embed=0.64",2025-08-02 10:05:10
+D011,DUPLICATE_CHARGE,0.95,Data analysis found a transaction with the same amount and customer within 3 minutes.,2025-08-02 10:25:18
+D012,REFUND_PENDING,0.78,"Description matched REFUND_PENDING. phrase='pending refund', fuzzy=67, embed=0.54",2025-08-02 11:01:56
+D013,DUPLICATE_CHARGE,0.95,Data analysis found a transaction with the same amount and customer within 3 minutes.,2025-08-02 12:44:39
+D014,REFUND_PENDING,0.78,"Description matched REFUND_PENDING. phrase='refund not received', fuzzy=77, embed=0.42",2025-08-02 13:30:21
+D015,FAILED_TRANSACTION,0.95,"Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.74. Txn status=FAILED",2025-08-02 14:02:07
+D016,FRAUD,0.87,"Description matched FRAUD keywords. phrase='suspicious', fuzzy=100, embed=0.58",2025-08-03 09:31:45
+D017,REFUND_PENDING,0.92,"Description matched REFUND_PENDING. phrase='refund', fuzzy=100, embed=0.81",2025-08-03 10:42:11
+D018,DUPLICATE_CHARGE,0.95,Data analysis found a transaction with the same amount and customer within 3 minutes.,2025-08-03 11:15:00
+D019,REFUND_PENDING,0.88,"Description matched REFUND_PENDING. phrase='reversed', fuzzy=100, embed=0.59",2025-08-03 11:55:27
+D020,DUPLICATE_CHARGE,0.95,Data analysis found a transaction with the same amount and customer within 3 minutes.,2025-08-03 12:20:49

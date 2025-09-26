@@ -1,0 +1,21 @@
+dispute_id,suggested_action,justification
+D001,Auto-refund,High confidence duplicate transaction pattern detected. Reason: Data analysis found a transaction with the same amount and customer within 3 minutes.
+D002,Manual review,"Customer claims debit despite failed status. Verify and process manual refund. Reason: Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.54. Txn status=FAILED"
+D003,Manual review,"Customer claims debit despite failed status. Verify and process manual refund. Reason: Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.78. Txn status=FAILED"
+D004,Mark as potential fraud & Escalate to bank,"Transaction shows strong indicators of potential fraud. Reason: Description matched FRAUD keywords. phrase='fraud', fuzzy=100, embed=0.79"
+D005,Escalate to bank,"Customer is waiting for a refund. Trace status with payment gateway or bank. Reason: Description matched REFUND_PENDING. phrase='refund', fuzzy=100, embed=0.72"
+D006,Auto-refund,High confidence duplicate transaction pattern detected. Reason: Data analysis found a transaction with the same amount and customer within 3 minutes.
+D007,Manual review,"Customer claims debit despite failed status. Verify and process manual refund. Reason: Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.56. Txn status=FAILED"
+D008,Ask for more info,The nature of the dispute is unclear and requires more details from the customer. Reason: No strong rule or semantic/fuzzy match. Requires manual investigation.
+D009,Mark as potential fraud & Escalate to bank,"Transaction shows strong indicators of potential fraud. Reason: Description matched FRAUD keywords. phrase='chargeback', fuzzy=100, embed=0.62"
+D010,Escalate to bank,"Customer is waiting for a refund. Trace status with payment gateway or bank. Reason: Description matched REFUND_PENDING. phrase='refund', fuzzy=100, embed=0.64"
+D011,Auto-refund,High confidence duplicate transaction pattern detected. Reason: Data analysis found a transaction with the same amount and customer within 3 minutes.
+D012,Escalate to bank,"Customer is waiting for a refund. Trace status with payment gateway or bank. Reason: Description matched REFUND_PENDING. phrase='pending refund', fuzzy=67, embed=0.54"
+D013,Auto-refund,High confidence duplicate transaction pattern detected. Reason: Data analysis found a transaction with the same amount and customer within 3 minutes.
+D014,Escalate to bank,"Customer is waiting for a refund. Trace status with payment gateway or bank. Reason: Description matched REFUND_PENDING. phrase='refund not received', fuzzy=77, embed=0.42"
+D015,Manual review,"Customer claims debit despite failed status. Verify and process manual refund. Reason: Description matched FAILED_TRANSACTION. phrase='failed', fuzzy=100, embed=0.74. Txn status=FAILED"
+D016,Mark as potential fraud & Escalate to bank,"Transaction shows strong indicators of potential fraud. Reason: Description matched FRAUD keywords. phrase='suspicious', fuzzy=100, embed=0.58"
+D017,Escalate to bank,"Customer is waiting for a refund. Trace status with payment gateway or bank. Reason: Description matched REFUND_PENDING. phrase='refund', fuzzy=100, embed=0.81"
+D018,Auto-refund,High confidence duplicate transaction pattern detected. Reason: Data analysis found a transaction with the same amount and customer within 3 minutes.
+D019,Escalate to bank,"Customer is waiting for a refund. Trace status with payment gateway or bank. Reason: Description matched REFUND_PENDING. phrase='reversed', fuzzy=100, embed=0.59"
+D020,Auto-refund,High confidence duplicate transaction pattern detected. Reason: Data analysis found a transaction with the same amount and customer within 3 minutes.
