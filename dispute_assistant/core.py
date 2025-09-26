@@ -239,7 +239,7 @@ def process_files(disputes_file, transactions_file):
             "predicted_category": category,
             "confidence": confidence,
             "explanation": explanation,
-            "status": "New"
+            "date & time": dispute["created_at"]
         })
 
         resolution_results.append({
