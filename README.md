@@ -20,7 +20,6 @@ The application leverages a hybrid AI model for dispute classification and a pow
 *   **Interactive Data Dashboard:**
     *   Presents classification and resolution results in clean, interactive tables.
     *   Includes a bar chart to visualize dispute trends by category (Bonus Feature).
-    *   Allows users to edit the status of a dispute directly in the UI (Bonus Feature).
     *   Provides one-click downloads for the generated CSV output files.
 *   **Conversational AI Chat Assistant (Task 3 & LLM Bonus):**
     *   A dedicated chat tab powered by **Google's Gemini** and **LangChain**.
